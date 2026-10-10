@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+
+# Runtime artifacts (auto-generated)
+server/.auth_secret
+server/*.db
+server/*.db-shm
+server/*.db-wal
+server/server.log
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

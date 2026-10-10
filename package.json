@@ -1,0 +1,14 @@
+{
+  "name": "educonnect-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduConnect AI - Intelligent Faculty-Student Academic Collaboration Platform (local demo)",
+  "scripts": {
+    "setup": "npm --prefix server install && npm --prefix client install",
+    "seed": "node server/seed.js",
+    "build": "npm --prefix client run build",
+    "start": "node server/index.js",
+    "dev": "npm --prefix server run dev & npm --prefix client run dev",
+    "demo": "npm run build && npm start"
+  }
+}

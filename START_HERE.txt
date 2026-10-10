@@ -1,0 +1,46 @@
+EDUCONNECT AI — KAISE CHALAYEIN (How to run)
+=============================================
+
+Ye folder me poora EduConnect AI project hai (Faculty-Student Academic Platform).
+
+PEHLI BAAR CHALANE KE LIYE (First time setup):
+----------------------------------------------
+1. Is folder me Terminal / Command Prompt kholo:
+   - File Explorer me is folder ko kholo
+   - Address bar me "cmd" type karke Enter dabao
+
+2. Ye commands ek-ek karke chalao:
+       npm run setup
+       npm run demo
+
+3. Browser me kholo:  http://localhost:4000
+
+
+DEMO LOGIN (presentation ke liye):
+----------------------------------
+Login page par 3 one-click buttons hain (Student / Faculty / Admin).
+
+Ya phir email + password se login karo:
+    Student  : aarav.patel@educonnect.demo   / student123
+    Faculty  : ram.sharma@educonnect.demo    / faculty123
+    Faculty 2: priya.nair@educonnect.demo    / faculty123
+    Admin    : admin@educonnect.demo         / admin123
+    (Baaki students: diya.singh@, kabir.khan@, meera.iyer@, rohan.verma@ ...demo / student123)
+
+
+AGLI BAAR CHALANE KE LIYE (Next time):
+--------------------------------------
+Sirf ek command:
+    npm run demo
+
+Database (demo data) pehli baar app chalne par apne aap ban jata hai.
+Fresh demo data banane ke liye:
+    npm run seed -- --reset   (ya: cd server aur phir: node seed.js --reset)
+
+
+ZAROORI BAATEIN:
+----------------
+- Ye DEMO MODE hai: saara data fictional hai (presentation ke liye).
+- File upload available NAHI hai — submissions aur notes sirf text hain.
+- Study Assistant ek local demo engine hai (live AI nahi).
+- Poora data "server\educonnect.db" file me save hota hai (app band karne ke baad bhi rehta hai).
