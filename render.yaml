@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: educonnect-ai
+    runtime: node
+    plan: free
+    healthCheckPath: /api/health
+    buildCommand: npm run setup && npm run build
+    startCommand: npm run seed && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
